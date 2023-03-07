@@ -1,4 +1,7 @@
 import { defineConfig } from '@twind/core'
+import presetAutoprefix from "@twind/preset-autoprefix";
+import presetTailwind from "@twind/preset-tailwind";
+
 
 /** @type {import('@twind/core').TwindUserConfig} */
 export default defineConfig({
@@ -7,7 +10,7 @@ export default defineConfig({
    */
   // hash: false,
   presets: [
-    "@twind/preset-tailwind",
-    "@twind/preset-autoprefix",
+    presetTailwind(),
+    presetAutoprefix(),
   ]
 })
